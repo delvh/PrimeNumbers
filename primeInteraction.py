@@ -13,6 +13,12 @@ def reset():
     restrictPrimes = True
 
 
+reset.str = "two" + str(1)
+print(reset.str)
+dir().__getitem__(reset.str)()  # unfortunately does not work in the current way
+print(dir())
+
+
 def setMaxPrimes(maximum):
     global maximumPrimeAdded
     maximumPrimeAdded = sqrt(maximum)
